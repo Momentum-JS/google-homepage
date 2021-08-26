@@ -1,0 +1,195 @@
+body {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Navigation Styles */
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+
+#left-nav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+#left-nav a {
+    color: #222;
+    padding: 5px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+#left-nav a:hover {
+    text-decoration: underline;
+}
+
+#right-nav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif
+}
+
+#right-nav a {
+    color: #222;
+    padding: 5px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+#right-nav, #left-nav {
+    padding: 10px;
+}
+
+#sign-up-btn {
+    padding: 10px;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+#sign-up-btn:hover {
+    background: #63a0ef;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+
+#apps-icon {
+    color: rgb(95, 99, 104);
+}
+
+/* Main */
+
+
+main {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+#searchbar-style {
+    border: 1px solid #dfe1e5;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#searchbar-style:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+#searchbar {
+    margin: 10px 50px;
+    border: 0;
+    width: 450px;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+#search-icon {
+    margin: 10px;
+    font-size: 1.4em;
+    vertical-align: middle;
+    color: #9b9ea5;
+}
+
+/*
+I noticed I could use flexbox to centre rather than margin 0 auto
+
+#logo, #searchbar {
+    display: block;
+    margin: 0 auto;
+}
+
+#search-buttons {
+    display: flex;
+    justify-content: center;
+}
+*/
+
+#search-buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    cursor: pointer;
+}
+
+#search-buttons button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer a {
+    color: #70757a;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer section {
+    width: 100%;
+    display: flex;
+    color: rgba(0,0,0,.54);
+    padding: 15px 15px;
+    background: #f2f2f2;
+}
+
+#pre-footer {
+    border-bottom: 1px solid #dadce0;
+}
+
+#left-footer {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#central-footer {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+#right-footer {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#leaf {
+    height: 0.9em;
+    padding-right: 3px;
+}
